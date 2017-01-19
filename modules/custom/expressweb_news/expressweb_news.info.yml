@@ -1,0 +1,6 @@
+name: Expressweb News
+description: Provide configuration for news content type.
+package: expressweb
+
+type: module
+core: 8.x

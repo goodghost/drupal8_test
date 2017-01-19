@@ -1,0 +1,11 @@
+name: 'Complex page'
+description: 'Provides Complex page content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - user
+package: Expressweb

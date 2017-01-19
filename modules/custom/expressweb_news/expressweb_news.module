@@ -1,0 +1,23 @@
+<?php
+
+function expressweb_news_form_node_news_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  dpm($form_id);
+  
+  //dpm(array_keys($form));
+  //dsm($form['field_image']);
+  //unset($form['field_news_image']);
+  unset($form['actions']['unpublish']);
+  $form['actions']['publish']['#value'] = t('Save');
+  kint($form);
+  //print '<pre>';
+  //print_r($form);
+  //print '</pre>';
+}
+
+function expressweb_news_form_node_news_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  expressweb_news_form_node_news_form_alter($form, $form_state, $form_id);
+}
+
+function expressweb_news_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  //kint($form_id);
+}

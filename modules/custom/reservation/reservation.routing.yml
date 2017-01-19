@@ -1,0 +1,16 @@
+reservation:
+  path: 'reservation'
+  defaults:
+    _controller: '\Drupal\reservation\Controller\ReservationController::form'
+    _title: 'Reservation'
+  requirements:
+    _permission: 'access content'
+
+
+reservation.form:
+  path: 'reservation-form'
+  defaults:
+    _form: '\Drupal\reservation\Form\ReservationForm'
+    _title: 'Reservation form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.complex_page.field_chunks
+    - node.type.complex_page
+  module:
+    - user
+id: node.complex_page.default
+targetEntityType: node
+bundle: complex_page
+mode: default
+content:
+  field_chunks:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }
